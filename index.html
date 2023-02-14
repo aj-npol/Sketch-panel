@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch A Sketch</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+    <div class="container">
+        <div id="header">
+            <p>Your Creativity Start Here :)</p>
+        </div>
+
+        <div id="sketch-panel">
+            <div id="grid-setting">
+                <div id="grid-size">
+                    <label id="grid-size-range-label">Grid Size: 16x16</label>
+                    <input type="range" id="grid-size-range" min="16" max="128" value="16" step="16">
+                </div>
+                <div id="grid-from-img">Placeholder for img import</div>
+                <div id="grid-import-png">Placeholder for img export</div>
+            </div>
+            <div id="brush-setup">
+                <div id="grid-bg-color">
+                    <label id="bg-color-picker-label">Sketch Panel BG Color</label>
+                    <input type="color" id="bg-color-picker" value="#00ff00">
+                </div>
+                <div id="brush-color">
+                    <label id="brush-color-picker-label">Brush Color</label>
+                    <input type="color" id="brush-color-picker" value="#000000">
+                </div>
+                <div id="brush-opacity">
+                    <label id="brush-opacity-range-label">Brush Opacity: 100</label>
+                    <input type="range" id="brush-opacity-range" min="1" max="100" value="100" step="1">
+                </div>
+                <div id="eraser-or-brush">
+                    <button id="btn-brush" class="btn-pressed"><img src="assets/pencil.png"></button>
+                    <button id="btn-eraser"><img src="assets/eraser.png"></button>
+                </div>
+            </div>
+            <div id="grid">
+                
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/index.js"></script>
+</body>
+</html>
